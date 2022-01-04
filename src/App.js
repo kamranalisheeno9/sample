@@ -6,7 +6,9 @@ import Track from "./screens/track"
 import Started from "./screens/started"
 import Summary from "./screens/summary"
 import SenderInfo from "./screens/senderInfo"
+import TransferStatus from "./screens/transferstatus"
 import CardInfo from "./screens/cardInfo"
+import FraudProtection from "./screens/fraudprotection"
 import {
   BrowserRouter,
   Route,
@@ -23,7 +25,9 @@ function App() {
       <Route path="/Summary" element={<Summary />} />
       <Route path="/card-information" element={<CardInfo />} />
       <Route path="/sender-information" element={<SenderInfo />} />
+      <Route path="/transfer-status" element={<TransferStatus />} />
       <Route path="/success" element={<Success />} />
+      <Route path="/fraud-protection" element={<FraudProtection />} />
       <Route path="/login" element={<Login />} />
       <Route exact path="/" element={<Track />} />
      

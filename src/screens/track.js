@@ -21,6 +21,9 @@ function  Success(props) {
     function estimate() {
       navigate('/getstarted')
     }
+    function transferstatus() {
+      navigate('/transfer-status')
+    }
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -56,7 +59,7 @@ function  Success(props) {
         <TabPanel value="2" className="tabs-each">
         <TextField id="standard-basic" className="input-fields" label="Reference Number" variant="standard" />
         <TextField id="standard-basic" className="input-fields" label="Full Name" variant="standard" />
-        <Button className='track-btn'  variant="contained">
+        <Button className='track-btn' onClick={()=>transferstatus()}  variant="contained">
   Track Your Money
 </Button>
         </TabPanel>

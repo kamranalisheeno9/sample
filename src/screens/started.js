@@ -23,15 +23,15 @@ import Header from "./header"
 
 function Started(props) {
   let navigate = useNavigate();
-  function handleClick() {
-    navigate('/login')
+  
+  function transferstatus() {
+    navigate('/transfer-status')
   }
+
   function handleSend() {
     navigate('/sender-information')
   }
-  function handleTrack() {
-    navigate('/')
-  }
+  
   const [value, setValue] = React.useState('1');
 
   const handleChange = (event, newValue) => {
@@ -111,7 +111,7 @@ Get Started
                   <TabPanel value="2" className="tabs-each">
                     <TextField id="standard-basic" className="input-fields" label="Reference Number" variant="standard" />
                     <TextField id="standard-basic" className="input-fields" label="Full Name" variant="standard" />
-                    <Button className='track-btn' variant="contained">
+                    <Button className='track-btn' onClick={()=>transferstatus()} variant="contained">
                       Track Your Money
                     </Button>
                   </TabPanel>

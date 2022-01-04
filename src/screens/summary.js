@@ -19,9 +19,11 @@ function  Success(props) {
     function handleTrack() {
       navigate('/')
     }
-    function success() {
-      navigate('/success')
+    
+    function fraudProtection() {
+      navigate('/fraud-protection')
     }
+    
     return (
         <div >
                     <Header />
@@ -71,7 +73,7 @@ function  Success(props) {
 
         </Grid>
         <Grid  item xs={12} md={4} >
-        <Button className='summary-btn' onClick={()=>success()} variant="contained">
+        <Button className='summary-btn' onClick={()=>fraudProtection()} variant="contained">
   Next
 </Button>
 
