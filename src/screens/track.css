@@ -2,7 +2,7 @@
     background-color: white;
     width: 80% !important;
     margin-top: 30px;
-    height: 60vh;
+    height: auto;
     text-align: center;
     padding: 0px !important;
 }
@@ -25,7 +25,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid gray;
-    width: 78%;
+    width: 75% !important;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -98,3 +98,30 @@
     padding-top: 15px !important;
     padding-bottom: 15px !important;
 }
+.tabs-each{
+    color:black;
+    height: 50vh;
+}
+
+@media screen and (max-width:1300px) {
+    .input-field-1{
+        width: 70% !important;
+    }   
+   }
+
+   @media screen and (max-width:1100px) {
+    .input-field-1{
+        width: 60% !important;
+    }   
+    .usd-name{
+        margin-left: 15px;
+    }
+   }
+   @media screen and (max-width:900px) {
+    .input-field-1{
+        width: 70% !important;
+    }   
+    .usd-name{
+        margin-left: 15px;
+    }
+   }

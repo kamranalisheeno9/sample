@@ -2,7 +2,7 @@
     background-color: white;
     width: 80% !important;
     margin-top: 30px;
-    height: 60vh;
+    height: auto;
     text-align: center;
     padding: 0px !important;
 }
@@ -156,9 +156,19 @@
     font-size: 16px;
     font-weight: 600;
     text-align: center;
+    width: 120px;
+
     
 }
 .fee-input::placeholder{
     text-align: center;
     color: black;
+}
+@media screen and (max-width:700px) {
+    .two-inputs{
+        width: 150px;    
+     
+    
+    }
+    
 }
